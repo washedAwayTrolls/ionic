@@ -1,0 +1,7 @@
+{
+  "name": "thirsty-plant",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
