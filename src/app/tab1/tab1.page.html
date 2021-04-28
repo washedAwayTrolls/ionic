@@ -10,16 +10,19 @@
 
 <ion-content [fullscreen]="true">
   <!--Put stuff here-->
-  <img src="IopnicAppBG.png">
+  <body style="background-color: blue">
+    
+  </body>
+  <img src="IopnicAppBG.png" alt="background image of window and table">
   <ion-list>
     <ion-list-header>
       <ion-label>
-        Single Selection
+        Select how much water you drank
       </ion-label>
     </ion-list-header>
   
-    <ion-item>
-      <ion-label>How much water in liters?</ion-label>
+    <ion-item class="ion-text-wrap">
+      <ion-label >How much water in liters?</ion-label>
       <ion-select placeholder="Select One">
         <ion-select-option value="1l">1 Liter</ion-select-option>
         <ion-select-option value="2l">2 Liters</ion-select-option>
@@ -41,6 +44,6 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  
 </ion-content>
 
