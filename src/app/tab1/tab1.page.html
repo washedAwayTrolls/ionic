@@ -16,14 +16,23 @@
   </body>
   <img src="IopnicAppBG.png" alt="background image of window and table">
   <ion-list>
-    <ion-list-header>
-      <ion-label>
-        Select how much water you drank
-      </ion-label>
-    </ion-list-header>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label>Gender</ion-label>
+      </ion-list-header>
   
-
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-radio slot="start" value="male"></ion-radio>
+      </ion-item>
   
+      <ion-item>
+        <ion-label>Female</ion-label>
+        <ion-radio slot="start" value="female"></ion-radio>
+      </ion-item>
+  
+     
+    </ion-radio-group>
   </ion-list>
 
   
