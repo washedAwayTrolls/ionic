@@ -21,23 +21,20 @@
       </ion-label>
     </ion-list-header>
   
-    <ion-item class="ion-text-wrap">
-      <ion-label >How much water in liters?</ion-label>
-      <ion-select placeholder="Select One">
-        <ion-select-option value="1l">1 Liter</ion-select-option>
-        <ion-select-option value="2l">2 Liters</ion-select-option>
-        <ion-select-option value="3l">3 Liters</ion-select-option>
-        <ion-select-option value="4l">4 Liters</ion-select-option>
-        <ion-select-option value="5l">5 Liters</ion-select-option>
-        <ion-select-option value="6l">6 Liters</ion-select-option>
-        <ion-select-option value="7l">7 Liters</ion-select-option>
-        <ion-select-option value="8l">8 Liters</ion-select-option>
-      </ion-select>
-    </ion-item>
+
   
   </ion-list>
 
-  <ion-button>Default</ion-button>
+  
+  <ion-item>
+    <ion-range min="0" max="10" step="1" pin = "true" snaps="true">
+      <ion-label slot="start">0 Liters</ion-label>
+      <ion-label slot="end">20 Liters</ion-label>
+    </ion-range>
+  </ion-item>
+
+  <ion-button expand = "full">Input Water</ion-button>
+
   <ion-header collapse="condense">
     
     <ion-toolbar>
