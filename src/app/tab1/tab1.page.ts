@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+const inputButton = document.getElementById("inputButton")! as HTMLInputElement;
 
 @Component({
   selector: 'app-tab1',
