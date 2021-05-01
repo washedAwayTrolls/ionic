@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { Console } from 'node:console';
-const inputButton = document.getElementById("inputButton")! as HTMLInputElement;
-
 
 @Component({
   selector: 'app-tab1',
@@ -10,8 +7,6 @@ const inputButton = document.getElementById("inputButton")! as HTMLInputElement;
 })
 export class Tab1Page {
 
-  constructor() {
-    
-  }
+  constructor() {}
 
 }
