@@ -12,14 +12,14 @@
     <ion-card>
   <!--Put stuff here-->
   <body style="background-color: blue">
-    <img src="../../assets/img/HealthyPlant.png"/>
+    <img src="../../assets/img/HealthyPlant.png" id="plant"/>
   </body>
 
 <ion-input placeholder="Enter Username"></ion-input>
-<img src="IopnicAppBG.png" alt="background image of window and table">
+
 
 <ion-list style="margin-top:82%; margin-left:10px">  
-<ion-radio-group value="biff">
+<ion-radio-group value="sex" id="sexSelection">
       <ion-list-header>
         <ion-label>Sex</ion-label>
       </ion-list-header>
@@ -39,18 +39,18 @@
   </ion-list>
 
   
-  <ion-item style="margin-left:10px">
+  <ion-item style="margin-left:10px" >
     <ion-thumbnail>
       <img src="../assets/img/waterbottle.jpg">
     </ion-thumbnail>
 
-<ion-range min="0" max="10" step="1" pin = "true" snaps="true">
+<ion-range min="0" max="20" step="1" pin = "true" snaps="true" id="cups">
   <ion-label slot="start">0 Cups</ion-label>
   <ion-label slot="end">20 Cups</ion-label>   
 </ion-range>
   </ion-item>
 
-  <ion-button expand = "full">Input Water</ion-button>
+  <ion-button expand="full" id="inputWater" value="test" (click)="onItemSelector(25)">Input Water</ion-button>
 
   <!--
     female bad=1-5 good= 6-8 best=9-11cups
@@ -75,7 +75,7 @@
       
     </ion-item>
   </ion-list> -->
-  
+  <button type="submit" class="parcel-btn weight-option" (click)="onItemSelector(25)"></button>
   </ion-content>
 
 
